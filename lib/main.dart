@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
                   color: Colors.blue,
                   decorationColor: Colors.amber,
                   decorationStyle: TextDecorationStyle.wavy,
-                  decorationThickness: 5,
+                  decorationThickness: 2,
 
               ),),
 
