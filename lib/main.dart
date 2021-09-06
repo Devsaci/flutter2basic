@@ -8,7 +8,7 @@ class MyApp extends StatefulWidget {
    return MyAppState();
   }
 }
- class MyAppState extends State{
+ class MyAppState extends State<MyApp>{
 
 
    int counter = 0;
