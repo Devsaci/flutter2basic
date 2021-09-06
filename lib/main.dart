@@ -24,11 +24,9 @@ class _MyAppState extends State<MyApp> {
           appBar: AppBar(
             title: Text("AppBar Text"),
           ),
-          body: Container(
-            alignment: Alignment.center,
-            color: Colors.amber,
-            child: Column(),
-          ),
+          body: Column(
+
+          )
         ),
       );
 }
