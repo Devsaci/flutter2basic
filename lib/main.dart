@@ -25,6 +25,9 @@ class _MyAppState extends State<MyApp> {
             title: Text("AppBar Text"),
           ),
           body: Column(
+              children: <Widget> [
+
+              ],
 
           )
         ),
