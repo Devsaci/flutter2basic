@@ -10,7 +10,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
+var str ="";
 
   @override
   Widget build(BuildContext context) => MaterialApp(
@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
             body: Column(
               children: <Widget>[
                 Text(
-                  "",
+                  str,
                   style: TextStyle(),
                 )
               ],
