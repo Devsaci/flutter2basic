@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
                     str = "Hello";
                   });
                 },
-                child: ,
+                child: Text("Text RaisedBotton"),
                 ),
               ],
             )),
