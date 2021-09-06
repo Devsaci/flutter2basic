@@ -10,7 +10,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  var str = "";
+  var str = "BLABLA";
 
   @override
   Widget build(BuildContext context) => MaterialApp(
@@ -24,8 +24,10 @@ class _MyAppState extends State<MyApp> {
                   str,
                   style: TextStyle(),
                 ),
-                RaisedButton(onPressed: (){
-                  str = "Hello";
+                RaisedButton(onPressed: () {
+                  setState(() {
+                    str = "Hello";
+                  });
                 })
               ],
             )),
