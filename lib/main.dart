@@ -14,7 +14,9 @@ class MyApp extends StatefulWidget {
    int counter = 0;
 
    void incrementCounter() {
-     counter += 2;
+     setState(() {
+       counter += 2;
+     });
    }
 
      @override
