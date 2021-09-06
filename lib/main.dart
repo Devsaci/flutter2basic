@@ -10,11 +10,11 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  int counter = 0;
+  int _counter = 0;
 
   void _incrementCounter() {
     setState(() {
-      counter += 2;
+      _counter += 2;
     });
   }
 
@@ -32,7 +32,7 @@ class _MyAppState extends State<MyApp> {
               children: [
                 Text("Counter Textaddition"),
                 Text(
-                  '$counter',
+                  '$_counter',
                   style: Theme.of(context).textTheme.headline1,
                 ),
               ],
