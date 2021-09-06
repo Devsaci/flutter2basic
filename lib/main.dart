@@ -1,51 +1,34 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-          appBar: AppBar(
-            title: const Text('AppBar Zakaria'),
-            backgroundColor: Colors.blueGrey,
-          ),
-          body: Column(
-            children: <Widget>[
-              Text('Rochambeau!', style: TextStyle(
-                color: Colors.red,
-                decoration: TextDecoration.underline,
-                fontSize: 30,
-                fontWeight: FontWeight.w200,
-                shadows: <Shadow>[
-                  Shadow(
-                      color: Colors.black87,
-                      offset: Offset(10, 8),
-                      blurRadius: 3
-                  )
-                ],
-
-              ),
-
-              ),
-              Text('Rochambeau!'),
-              Text('Rochambeau!'),
-              Text('Rochambeau!', style: TextStyle(
-                  decoration: TextDecoration.combine(
-                      [TextDecoration.underline, TextDecoration.overline]),
-                  color: Colors.blue,
-                  decorationColor: Colors.amber,
-                  decorationStyle: TextDecorationStyle.wavy,
-                  decorationThickness: 2,
-
-              ),),
-
-            ],
-          )
-      ),
-    );
+  int counter =0;
+  void incrementCounter(){
+    counter +=2;
   }
+  @override
+  Widget build(BuildContext context) => MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: Text("AppBar Text"),
+          ),
+          body: Container(
+            alignment: Alignment.center,
+            color: Colors.amber,
+              child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Counter Textaddition"),
+                  Text('$counter',style: Theme.of(context).textTheme.headline1,),
+
+                ],
+              ),
+          ),
+          floatingActionButton: FloatingActionButton(
+              onPressed: incrementCounter),
+
+
+        ),
+      );
 }
