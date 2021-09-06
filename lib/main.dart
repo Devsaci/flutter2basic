@@ -22,13 +22,15 @@ class _MyAppState extends State<MyApp> {
               children: <Widget>[
                 Text(
                   str,
-                  style: TextStyle(),
-                ),
+                  style: TextStyle(color: Colors.red, fontSize: 20),
+                  ),
                 RaisedButton(onPressed: () {
                   setState(() {
                     str = "Hello";
                   });
-                })
+                },
+                child: ,
+                ),
               ],
             )),
       );
