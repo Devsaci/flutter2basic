@@ -40,7 +40,11 @@ class MyApp extends StatefulWidget {
            ),
          ),
          floatingActionButton:
-         FloatingActionButton(onPressed: incrementCounter),
+         FloatingActionButton(
+             onPressed: incrementCounter,
+           child: Icon(Icons.add_alarm),
+         ),
+
        ),
      );
    }
