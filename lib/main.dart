@@ -40,11 +40,19 @@ class _MyAppState extends State<MyApp> {
                   height: 50,
                 ),
                 FlatButton(
-                  onPressed: (){},
+                  onPressed: () {},
                   padding: EdgeInsets.all(30),
                   color: Colors.red,
-                  child: Text("Text FlatButton"),
+                  child: Text(
+                    "Text FlatButton",
+                    style: TextStyle(fontSize: 35),
+                  ),
+                  splashColor: Colors.blue,
                   disabledColor: Colors.blueGrey,
+                  highlightColor: Colors.yellow,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                  ),
                 ),
                 SizedBox(
                   height: 50,
