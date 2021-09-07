@@ -92,9 +92,10 @@ class _MyAppState extends State<MyApp> {
                 ),
               ],
             ),
-            floatingActionButton: FloatingActionButton(
+            floatingActionButton: FloatingActionButton.extended(
                 backgroundColor: Colors.green,
-                child: Icon(Icons.access_alarms),
+               icon: Icon(Icons.android),
+                label: Text("add"),
                 onPressed: () {
                   setState(() {
                     colorAppBar = Colors.amber;
