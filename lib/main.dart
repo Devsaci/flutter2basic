@@ -29,6 +29,7 @@ class _MyAppState extends State<MyApp> {
         home: Scaffold(
             appBar: AppBar(
               title: Text("AppBar Text"),
+                backgroundColor: Colors.black,
             ),
             body: Column(
               children: <Widget>[
