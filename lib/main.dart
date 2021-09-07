@@ -26,16 +26,13 @@ class _MyAppState extends State<MyApp> {
                 ),
                 SizedBox(height: 40),
                 RaisedButton(
-                  onPressed: () {
-                    setState(() {
-                      str = "Hello";
-                    });
-                  },
+                  onPressed: () => setState(() {str = "Hello";}),
+
                   onLongPress: (){
                     setState(() {
                       str = "BayBay";
                     });
-                  } ,
+                  },
                   color: Colors.amber,
                   textColor: Colors.green,
                   splashColor: Colors.blue,
