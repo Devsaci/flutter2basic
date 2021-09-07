@@ -34,11 +34,8 @@ class _MyAppState extends State<MyApp> {
                 RaisedButton(
                   // onPressed: () => setState(() {str = "Hello";}),
                    onPressed: onPressedFunction,
-                  onLongPress: () {
-                    setState(() {
-                      str = "BayBay";
-                    });
-                  },
+                  onLongPress: () => setState(() {str = "BayBay";}),
+
                   color: Colors.amber,
                   textColor: Colors.green,
                   splashColor: Colors.blue,
