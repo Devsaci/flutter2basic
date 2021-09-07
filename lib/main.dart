@@ -12,6 +12,12 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   var str = "BLABLA";
 
+  void onPressedFunction() {
+   setState(() {
+          str = "Hello";
+        });
+  }
+
   @override
   Widget build(BuildContext context) => MaterialApp(
         home: Scaffold(
@@ -26,9 +32,9 @@ class _MyAppState extends State<MyApp> {
                 ),
                 SizedBox(height: 40),
                 RaisedButton(
-                  onPressed: () => setState(() {str = "Hello";}),
-
-                  onLongPress: (){
+                  // onPressed: () => setState(() {str = "Hello";}),
+                   onPressed: onPressedFunction,
+                  onLongPress: () {
                     setState(() {
                       str = "BayBay";
                     });
@@ -40,7 +46,7 @@ class _MyAppState extends State<MyApp> {
                   padding: EdgeInsets.all(30),
                   child: Text(
                     "Text RaisedBotton",
-                    style: TextStyle(fontSize: 35,color: Colors.red),
+                    style: TextStyle(fontSize: 35, color: Colors.red),
                   ),
                 ),
               ],
