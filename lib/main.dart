@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 
 void main() => runApp(MyApp());
 
@@ -92,7 +93,13 @@ class _MyAppState extends State<MyApp> {
                 ),
               ],
             ),
-            floatingActionButton: FloatingActionButton(onPressed: null)
+            floatingActionButton: FloatingActionButton(
+
+                onPressed: (){
+              setState(() {
+                colorAppBar= Colors.amber;
+              });
+            })
         ),
       );
 }
