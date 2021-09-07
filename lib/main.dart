@@ -13,9 +13,15 @@ class _MyAppState extends State<MyApp> {
   var str = "BLABLA";
 
   void onPressedFunction() {
-   setState(() {
-          str = "Hello";
-        });
+    setState(() {
+      str = "Hello";
+    });
+  }
+
+  void onLongPressFunction() {
+    setState(() {
+      str = "BayBay";
+    });
   }
 
   @override
@@ -33,9 +39,9 @@ class _MyAppState extends State<MyApp> {
                 SizedBox(height: 40),
                 RaisedButton(
                   // onPressed: () => setState(() {str = "Hello";}),
-                   onPressed: onPressedFunction,
-                  onLongPress: () => setState(() {str = "BayBay";}),
-
+                  onPressed: onPressedFunction,
+                  // onLongPress: () => setState(() {str = "BayBay";}),
+                  onLongPress: onLongPressFunction,
                   color: Colors.amber,
                   textColor: Colors.green,
                   splashColor: Colors.blue,
