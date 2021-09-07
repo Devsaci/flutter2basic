@@ -40,7 +40,7 @@ class _MyAppState extends State<MyApp> {
                   height: 50,
                 ),
                 FlatButton(
-                  onPressed: null,
+                  onPressed: (){},
                   padding: EdgeInsets.all(30),
                   color: Colors.red,
                   child: Text("Text FlatButton"),
