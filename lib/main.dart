@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
   void onPressedFunction() {
     setState(() {
       str = "Hello";
-      colorAppBar=Colors.yellow;
+      colorAppBar = Colors.yellow;
     });
   }
 
@@ -36,9 +36,12 @@ class _MyAppState extends State<MyApp> {
             ),
             body: Column(
               children: <Widget>[
+                SizedBox(
+                  height: 50,
+                ),
                 Text(
                   str,
-                  style: TextStyle(color: Colors.red, fontSize: 20),
+                  style: TextStyle(color: Colors.green, fontSize: 20),
                 ),
                 SizedBox(height: 40),
                 RaisedButton(
