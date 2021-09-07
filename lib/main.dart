@@ -40,6 +40,7 @@ class _MyAppState extends State<MyApp> {
                   textColor: Colors.green,
                   splashColor: Colors.blue,
                   highlightColor: Colors.yellow,
+                  padding: EdgeInsets.all(30),
                   child: Text(
                     "Text RaisedBotton",
                     style: TextStyle(fontSize: 35,color: Colors.red),
