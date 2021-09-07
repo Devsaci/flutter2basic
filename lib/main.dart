@@ -34,24 +34,33 @@ class _MyAppState extends State<MyApp> {
               title: Text("AppBar Text"),
               backgroundColor: colorAppBar,
             ),
-            body: Column(
+            body:
+            Column(
               children: <Widget>[
                 SizedBox(
                   height: 50,
                 ),
-                FlatButton(
-                  onPressed: () {},
-                  padding: EdgeInsets.all(30),
-                  color: Colors.red,
-                  child: Text(
-                    "Text FlatButton",
-                    style: TextStyle(fontSize: 35),
-                  ),
-                  splashColor: Colors.blue,
-                  disabledColor: Colors.blueGrey,
-                  highlightColor: Colors.yellow,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                Container(
+                    alignment: Alignment.center,
+                    color: Colors.black,
+                  child: FlatButton(
+                    onPressed: () {},
+                    padding: EdgeInsets.all(30),
+                    color: Colors.red,
+                    child: Text(
+                      "Text FlatButton",
+                      style: TextStyle(fontSize: 35),
+                    ),
+                    splashColor: Colors.blue,
+                    disabledColor: Colors.blueGrey,
+                    highlightColor: Colors.yellow,
+                    shape: RoundedRectangleBorder(
+                      side: BorderSide(
+                        color: Colors.black,
+                        width: 5,
+                      ),
+                      borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -62,22 +71,28 @@ class _MyAppState extends State<MyApp> {
                   style: TextStyle(color: Colors.green, fontSize: 20),
                 ),
                 SizedBox(height: 40),
-                RaisedButton(
-                  // onPressed: () => setState(() {str = "Hello";}),
-                  onPressed: onPressedFunction,
-                  // onLongPress: () => setState(() {str = "BayBay";}),
-                  onLongPress: onLongPressFunction,
-                  color: Colors.amber,
-                  textColor: Colors.green,
-                  splashColor: Colors.blue,
-                  highlightColor: Colors.yellow,
-                  padding: EdgeInsets.all(30),
-                  child: Text(
-                    "Text RaisedBotton",
-                    style: TextStyle(fontSize: 35, color: Colors.red),
+                Container(
+                  color: Colors.green,
+                  alignment: Alignment.centerLeft,
+                  child: RaisedButton(
+                    // onPressed: () => setState(() {str = "Hello";}),
+                    onPressed: onPressedFunction,
+                    // onLongPress: () => setState(() {str = "BayBay";}),
+                    onLongPress: onLongPressFunction,
+                    color: Colors.amber,
+                    textColor: Colors.green,
+                    splashColor: Colors.blue,
+                    highlightColor: Colors.yellow,
+                    padding: EdgeInsets.all(30),
+                    child: Text(
+                      "Text RaisedBotton",
+                      style: TextStyle(fontSize: 35, color: Colors.red),
+                    ),
                   ),
                 ),
               ],
-            )),
+            ),
+            floatingActionButton: FloatingActionButton(onPressed: null)
+        ),
       );
 }
