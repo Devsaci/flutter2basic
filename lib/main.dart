@@ -35,15 +35,14 @@ class _MyAppState extends State<MyApp> {
               title: Text("AppBar Text"),
               backgroundColor: colorAppBar,
             ),
-            body:
-            Column(
+            body: Column(
               children: <Widget>[
                 SizedBox(
                   height: 50,
                 ),
                 Container(
-                    alignment: Alignment.center,
-                    color: Colors.black,
+                  alignment: Alignment.center,
+                  color: Colors.black,
                   child: FlatButton(
                     onPressed: () {},
                     padding: EdgeInsets.all(30),
@@ -94,12 +93,12 @@ class _MyAppState extends State<MyApp> {
               ],
             ),
             floatingActionButton: FloatingActionButton(
-
-                onPressed: (){
-              setState(() {
-                colorAppBar= Colors.amber;
-              });
-            })
-        ),
+                backgroundColor: Colors.green,
+                child: Icon(Icons.access_alarms),
+                onPressed: () {
+                  setState(() {
+                    colorAppBar = Colors.amber;
+                  });
+                })),
       );
 }
