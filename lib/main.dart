@@ -11,16 +11,19 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   var str = "BLABLA";
+  var colorAppBar = Colors.black;
 
   void onPressedFunction() {
     setState(() {
       str = "Hello";
+      colorAppBar=Colors.yellow;
     });
   }
 
   void onLongPressFunction() {
     setState(() {
       str = "BayBay";
+      colorAppBar = Colors.black87;
     });
   }
 
@@ -29,7 +32,7 @@ class _MyAppState extends State<MyApp> {
         home: Scaffold(
             appBar: AppBar(
               title: Text("AppBar Text"),
-                backgroundColor: Colors.black,
+              backgroundColor: colorAppBar,
             ),
             body: Column(
               children: <Widget>[
