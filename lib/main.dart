@@ -36,9 +36,13 @@ class _MyAppState extends State<MyApp> {
                       str = "BayBay";
                     });
                   } ,
+                  color: Colors.amber,
+                  textColor: Colors.green,
+                  splashColor: Colors.blue,
+                  highlightColor: Colors.yellow,
                   child: Text(
                     "Text RaisedBotton",
-                    style: TextStyle(fontSize: 35),
+                    style: TextStyle(fontSize: 35,color: Colors.red),
                   ),
                 ),
               ],
