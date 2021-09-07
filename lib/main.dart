@@ -23,13 +23,23 @@ class _MyAppState extends State<MyApp> {
                 Text(
                   str,
                   style: TextStyle(color: Colors.red, fontSize: 20),
+                ),
+                SizedBox(height: 40),
+                RaisedButton(
+                  onPressed: () {
+                    setState(() {
+                      str = "Hello";
+                    });
+                  },
+                  onLongPress: (){
+                    setState(() {
+                      str = "BayBay";
+                    });
+                  } ,
+                  child: Text(
+                    "Text RaisedBotton",
+                    style: TextStyle(fontSize: 35),
                   ),
-                RaisedButton(onPressed: () {
-                  setState(() {
-                    str = "Hello";
-                  });
-                },
-                child: Text("Text RaisedBotton"),
                 ),
               ],
             )),
