@@ -39,6 +39,16 @@ class _MyAppState extends State<MyApp> {
                 SizedBox(
                   height: 50,
                 ),
+                FlatButton(
+                  onPressed: null,
+                  padding: EdgeInsets.all(30),
+                  color: Colors.red,
+                  child: Text("Text FlatButton"),
+                  disabledColor: Colors.blueGrey,
+                ),
+                SizedBox(
+                  height: 50,
+                ),
                 Text(
                   str,
                   style: TextStyle(color: Colors.green, fontSize: 20),
